@@ -1,16 +1,23 @@
 .header {
-    font-size: 18px;
-    color: #000;
+  font-size: 18px;
+  color: #000;
 }
 
 .header-temperature {
-    font-size: 24px;
-    font-weight: bold;
-    color: #6C40B5;
+  font-size: 81px;
+  font-weight: bold;
+  color: #6c40b5;
 }
 
 .humidity-section {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.location-description-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #666666;
 }

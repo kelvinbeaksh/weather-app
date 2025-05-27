@@ -1,6 +1,6 @@
 import React from "react";
 import { WeatherData } from "../types/weather";
-import "./WeatherINfo.css";
+import "./WeatherInfo.css";
 
 interface Props {
   data: WeatherData;
@@ -8,20 +8,20 @@ interface Props {
 
 const WeatherInfo: React.FC<Props> = ({ data }) => (
   <div>
-    <p className="header">Today's Weather</p>
-    <p className="header-temperature">{data.main.temp}°C</p>
+    <div className="header">Today's Weather</div>
+    <div className="header-temperature">{data.main.temp}°</div>
     <div className="humidity-section">
-      <p>H: {data.main.humidity}%</p>
-      <p>L: {data.main.humidity}%</p>
+      <div>H: {data.main.humidity}%</div>
+      <div>L: {data.main.humidity}%</div>
     </div>
-    <h2>
-      {data.name}, {data.sys.country}
-    </h2>
-    <p>{data.weather[0].description}</p>
-    <img
-      src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
-      alt="Weather Icon"
-    />
+    <div className="location-description-section">
+      <div>
+        {data.name}, {data.sys.country}
+      </div>
+      <div>{data.datetime}</div>
+      <div>{data.main.humidity}%</div>
+      <div>{data.weather[0].description}</div>
+    </div>
   </div>
 );
 

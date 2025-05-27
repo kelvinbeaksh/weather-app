@@ -5,3 +5,15 @@ body  {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 50px 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  max-width: 700px;
+  border: 1px solid rgba(255, 255, 255);
+  margin: 0 auto;
+}

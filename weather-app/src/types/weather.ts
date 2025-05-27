@@ -3,5 +3,6 @@ export interface WeatherData {
     sys: { country: string };
     main: { temp: number; humidity: number };
     weather: { description: string; icon: string }[];
+    datetime?: string;
   }
   
