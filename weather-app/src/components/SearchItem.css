@@ -1,0 +1,19 @@
+.search-item-container {
+  display: flex;
+  flex-direction: row;
+  padding: 21px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .search-item-container {
+    padding: 10px;
+    flex-direction: column; /* Optional: stack vertically on small screens */
+  }
+}
+
+
+.search-item-button {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
+}
